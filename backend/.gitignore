@@ -1,7 +1,7 @@
 # Dependencies
 node_modules/
 /jspm_packages/
-
+package-lock.json
 # Production artifacts
 build/
 dist/
