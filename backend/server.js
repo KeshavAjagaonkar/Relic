@@ -1,4 +1,4 @@
-import yargs, { describe } from "yargs";
+import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 
 import { initRepo } from "./controllers/init.js";
