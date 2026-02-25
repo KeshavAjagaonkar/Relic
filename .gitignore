@@ -1,26 +1,26 @@
 # Dependencies
 node_modules/
-/jspm_packages/
 package-lock.json
+
+# Relic internal directory (never version control the VCS itself)
+.relic/
+
 # Production artifacts
 build/
 dist/
-/coverage/
+coverage/
 .nyc_output/
 
 # Environment variables
 .env
 .env.test
+.env.local
 
 # Logs
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-lerna-debug.log*
-
-# Diagnostic reports
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 *.pid
@@ -29,9 +29,8 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Editor/OS files
 .vscode/
+.idea/
 .eslintcache
-.npm
-*.tgz
 .DS_Store
 Thumbs.db
 

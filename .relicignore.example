@@ -1,0 +1,30 @@
+# .relicignore — Files and directories to exclude from tracking
+# Syntax: glob patterns (same as .gitignore)
+# Lines starting with # are comments
+
+# Dependencies — thousands of files you don't own
+node_modules/
+
+# Relic's own data directory — never track the VCS inside itself!
+.relic/
+
+# Environment secrets — NEVER commit these
+.env
+.env.local
+.env.production
+
+# Build output — generated files, not source
+build/
+dist/
+coverage/
+
+# Logs — runtime noise
+*.log
+
+# OS files — platform-specific junk
+.DS_Store
+Thumbs.db
+
+# Editor config — personal preferences, not project code
+.vscode/
+.idea/

@@ -1,0 +1,29 @@
+{
+    "name": "relic-vcs",
+    "version": "2.0.0",
+    "description": "Content-addressable version control system built on Git's internal architecture",
+    "type": "module",
+    "bin": {
+        "relic": "./bin/relic.js"
+    },
+    "main": "bin/relic.js",
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+        "dev": "node bin/relic.js"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "author": "KeshavAjagaonkar",
+    "license": "MIT",
+    "dependencies": {
+        "yargs": "^17.7.2",
+        "minimatch": "^9.0.3",
+        "@aws-sdk/client-s3": "^3.600.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "@jest/globals": "^29.7.0"
+    }
+}
